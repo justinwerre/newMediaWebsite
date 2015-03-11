@@ -1,0 +1,19 @@
+body {
+  background-color: mediumaquamarine;
+}
+
+.menu{
+  display: flex;
+  flex-flow: column;
+  flex: 1 6 30%;
+  border: 1px solid black;
+  display: flex;
+  min-width: 200px;
+}
+
+.content{
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+  display: flex;
+}
