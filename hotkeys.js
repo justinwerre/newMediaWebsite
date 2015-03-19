@@ -3,11 +3,13 @@ window.onload = function(){
 }
 
 function split(event){
-	if("1" == event.key || "3" == event.key){
+	var key = event.keyCode || event.which;
+	
+	if(49 == key || 51 == key){
 		document.getElementById("next-split").click();
-	}else if("2" == event.key){
+	}else if(50 == key){
 		document.getElementById("prev-split").click();
-	}else if("4" == event.key){
+	}else if(52 == key){
 		document.getElementById("home").click();
 	}
 }
