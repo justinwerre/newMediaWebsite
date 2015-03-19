@@ -1,4 +1,24 @@
-body {
+body{
+	background-color: #333;
+}
+
+.header{
+	width: 100%;
+	border: 2px solid #999;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 40pt;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+
+	background: #dc143c; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #dc143c 0%, #00ffff 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#dc143c), color-stop(99%,#00ffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* IE10+ */
 }
 
 .flex-box{
@@ -11,49 +31,100 @@ body {
 				  flex-flow: row;
 }
 
+/* menu styles */
 .menu{
 	flex: 1 0 20%;
 	order: 0;
-	margin: 0px 5px 5px 5px;
+	margin: 0px 5px 5px 0px;
 }
 
 ul{	
-  border: 1px solid black;
+	background-color: #eee;
+  border: 2px solid #999;
 	border-radius: 5px;
 	list-style-type: none;
 	margin-top: 0px;
 	padding-left: 0px;
 }
 
-li:first-child{
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-li:last-child{
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
 li{
 	padding-left: 40px;
 }
 
+.current{
+	background-color: aqua;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active{
+	color: black;
+}
+
+li:hover{
+  background-color: crimson;
+}
+
+/* content styles */
 .content{
+	background-color: #eee;
   flex: 2 0 70%;
   order: 1;
-  border: 1px solid black;
+  border: 2px solid #999;
 	border-radius: 5px;
 	padding: 5px;
 }
 
-.current{
-	background-color: aquamarine;
+/* controls styles*/
+.controls{
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-flex-flow: row;
+	   		  flex-flow: row;
+}
+
+.btn{
+	border: 2px solid #999;
+	border-radius: 5px;
+	height: 50px;
+	width: 100%
+}
+
+.btn-link{
+	margin: 1px;
+	flex: 0 0 50%;
+}
+
+.btn-prev{
+	background-color: crimson;
+}
+
+.btn-next{
+	background-color: aqua;
 }
 
 /* swap to column layout for small media */
 @media all and (max-width: 640px){
 	.flex-box{
 		flex-direction: column;
+	}
+
+	li{
+		height: 50px;
+	}
+
+	.menu{
+		margin: 0px;
+	}
+
+	.controls{
+		flex-direction: column;
+		height: 100px;
+	}
+
+	.btn{
+		height: 50px;
 	}
 }
