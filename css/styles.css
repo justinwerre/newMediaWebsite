@@ -13,13 +13,12 @@ body{
 	text-transform: capitalize;
 	margin-bottom: 10px;
 
-background: #dc143c; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #dc143c 0%, #00ffff 99%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#dc143c), color-stop(99%,#00ffff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* IE10+ */
-
+	background: #dc143c; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #dc143c 0%, #00ffff 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#dc143c), color-stop(99%,#00ffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* IE10+ */
 }
 
 .flex-box{
@@ -36,7 +35,7 @@ background: -ms-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* IE10+ */
 .menu{
 	flex: 1 0 20%;
 	order: 0;
-	margin: 0px 5px 5px 5px;
+	margin: 0px 5px 5px 0px;
 }
 
 ul{	
@@ -46,16 +45,6 @@ ul{
 	list-style-type: none;
 	margin-top: 0px;
 	padding-left: 0px;
-}
-
-li:first-child{
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-li:last-child{
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
 li{
@@ -100,7 +89,12 @@ li:hover{
 	border: 2px solid #999;
 	border-radius: 5px;
 	height: 50px;
-	flex: 1 0 50%;
+	width: 100%
+}
+
+.btn-link{
+	margin: 1px;
+	flex: 0 0 50%;
 }
 
 .btn-prev{
@@ -121,8 +115,13 @@ li:hover{
 		height: 50px;
 	}
 
+	.menu{
+		margin: 0px;
+	}
+
 	.controls{
 		flex-direction: column;
+		height: 100px;
 	}
 
 	.btn{
