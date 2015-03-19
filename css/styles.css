@@ -1,10 +1,10 @@
 body{
-	background-color: crimson;
+	background-color: #333;
 }
 
 .header{
 	width: 100%;
-	border: 2px solid grey;
+	border: 2px solid #999;
 	border-radius: 5px;
 	text-align: center;
 	padding-top: 20px;
@@ -41,7 +41,7 @@ background: -ms-linear-gradient(-45deg, #dc143c 0%,#00ffff 99%); /* IE10+ */
 
 ul{	
 	background-color: #eee;
-  border: 2px solid grey;
+  border: 2px solid #999;
 	border-radius: 5px;
 	list-style-type: none;
 	margin-top: 0px;
@@ -83,7 +83,7 @@ li:hover{
 	background-color: #eee;
   flex: 2 0 70%;
   order: 1;
-  border: 2px solid grey;
+  border: 2px solid #999;
 	border-radius: 5px;
 	padding: 5px;
 }
@@ -97,7 +97,7 @@ li:hover{
 }
 
 .btn{
-	border: 2px solid grey;
+	border: 2px solid #999;
 	border-radius: 5px;
 	height: 50px;
 	flex: 1 0 50%;
